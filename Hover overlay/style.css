@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background-image: linear-gradient(black, red);
+    width: 100%;
+    height: 31rem;
+    font-family: 'Outfit', sans-serif, 'Ubuntu', sans-serif;
+}
+
+section{
+    width: 25rem;
+    aspect-ratio: 1 / 1;
+    margin: 4rem auto;
+    background-image: url(./slipknot.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    position: relative;
+}
+
+section::before{
+    content: url(./icon-view.svg);
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    width: inherit;
+    aspect-ratio: 1 / 1;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.562);
+    transform: scale(0);
+    transition: all .1s ease;
+}
+
+section:hover::before{
+    transform: scale(1);
+    cursor: pointer;
+}
+
+h1{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+p{
+    color: #fff;
+    font-size: 2rem;
+}
